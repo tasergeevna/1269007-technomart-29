@@ -117,7 +117,7 @@
 /* Global */
 
 body {
-    min-width: 1200px;
+    min-width: 960px;
     margin: 0;
     padding: 0;
     font-family: "Cuprum", Arial, sans-serif;
@@ -184,7 +184,7 @@ img {
 /* Header */
 
 .header-top-bar {
-    width: 1200px;
+    width: 960px;
     height: 42px;
     background-color: var(--basic-blue);
     color: var(--basic-white);
@@ -208,7 +208,7 @@ img {
 }
 
 .main-header-info {
-    width: 1200px;
+    width: 960px;
     height: 278px;
     background-color: var(--gray-header);
 }
@@ -426,7 +426,7 @@ img {
 /* Service section */
 
 .service-section {
-    width: 1200px;
+    width: 960px;
     height: 522px;
     background-color: var(--gray-service-and-footer);
     text-align: left;
@@ -507,14 +507,14 @@ img {
 /* Footer */
 
 .main-footer {
-    width: 1200px;
+    width: 960px;
     height: 300px;
     color: var(--basic-white);
     text-align: left;
 }
 
 .footer-container {
-    width: 1200px;
+    width: 960px;
     height: 193px;
     background-color: var(--blue-light);
 }
@@ -554,7 +554,7 @@ img {
 }
 
 .footer-bottom-bar {
-    width: 1200px;
+    width: 960px;
     height: 107px;
     background-color: var(--basic-blue);
     font-size: 16px;
