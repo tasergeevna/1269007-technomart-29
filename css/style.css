@@ -185,13 +185,43 @@ img {
     color: var(--blue-light);
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+  }
+
 /* Header */
+
+.main-logo-container {
+    width: 220px;
+    height: 47px;
+    background-color: var(--basic-red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .header-top-bar {
     width: 960px;
     height: 42px;
     background-color: var(--basic-blue);
     color: var(--basic-white);
+    display: flex;
+}
+
+.cart {
+    width: 136px;
+    height: 42px;
+    background-color: var(--basic-red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .order-button {
@@ -451,6 +481,10 @@ img {
     width: 220px;
     height: 145px;
     border: solid 1px var(--gray-border);
+}
+
+.brand-item-link {
+    background-color: var(--gray-popular);
 }
 
 /* Service section */
