@@ -149,7 +149,7 @@ img {
 
 .new-item {
     width: 100px;
-    height: 30px;
+    height: auto;
 }
 
 .basic-button {
@@ -217,7 +217,7 @@ img {
 
 .cart {
     width: 136px;
-    height: 42px;
+    height: auto;
     background-color: var(--basic-red);
     display: flex;
     align-items: center;
