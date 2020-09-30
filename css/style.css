@@ -589,11 +589,11 @@ img {
 }
 
 .product-container {
-    height: 154px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    flex: 1;
 }
 
 .last-price {
