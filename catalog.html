@@ -99,30 +99,37 @@
             <!--Здесь будет форма фильтра-->
           <button class="catalog-link filters-button" type="submit" value="Показать">Показать</button>
         </div>
-
-        <ul class="sorting-section-list">
-          <li>
-            <h2 class="catalog-link filters-title">Сортировка:</h2>
-          </li>
-          <li>
-              <button class="catalog-link sorting-button" type="button" name="price" value="По цене">По цене</button>
-          </li>
-          <li>
-              <button class="catalog-link sorting-button" type="button" name="type" value="По типу">По типу</button>
-          </li>
-          <li>
-            <button class="catalog-link sorting-button" type="button" name="functional" value="По функционалу">По функционалу</button>
-          </li>
-          <li>
-            <button class="catalog-link sorting-button arrow-sorting" type="button" name="up" value="По возрастанию"></button>
-          </li>
-          <li>
-            <button class="catalog-link sorting-button arrow-sorting" type="button" name="down" value="По убыванию"></button>
-          </li>
-        </ul>
-
+        
         <div class="catalog-section">
           <h2 class="visually-hidden">Все товары</h2>
+          <ul class="sorting-section-list">
+            <li>
+              <h2 class="catalog-link filters-title">Сортировка:</h2>
+            </li>
+            <li>
+                <button class="catalog-link sorting-button" type="button" name="price" value="По цене"><span class="sorting-button-text">По цене</span></button>
+            </li>
+            <li>
+                <button class="catalog-link sorting-button" type="button" name="type" value="По типу"><span class="sorting-button-text">По типу</span></button>
+            </li>
+            <li>
+              <button class="catalog-link sorting-button" type="button" name="functional" value="По функционалу"><span class="sorting-button-text">По функционалу</span></button>
+            </li>
+            <li>
+              <button class="catalog-link sorting-button arrow-sorting" type="button" name="up" value="По возрастанию">
+                <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.5 0L11 10L0 10" fill="#EE3643"/>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button class="catalog-link sorting-button arrow-sorting" type="button" name="down" value="По убыванию">
+                <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.5 10L0 0H11" fill="#C5C5C5"/>
+                </svg>
+              </button>
+            </li>
+          </ul>
           <ul class="all-items">
             <li class="popular-item">
               <div class="item-pic-container flex-centered">
