@@ -122,6 +122,7 @@
 
 body {
     min-width: 960px;
+    width: 100%;
     margin: 0;
     padding: 0;
     font-family: "Cuprum", Arial, sans-serif;
@@ -225,6 +226,7 @@ img {
 .main-header-info {
     margin: 0;
     padding: 47px 0 40px 0;
+    width: 100%;
 }
 
 .main-logo-container {
@@ -436,8 +438,8 @@ img {
     margin: 0 auto;
     padding: 59px 0 0 0;
     display: grid;
-    grid-template-columns: repeat(3, 300px);
-    grid-template-rows: repeat(3, 123px);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 20px;
 }
 
@@ -458,7 +460,7 @@ img {
     grid-column: 3/3;
     grid-row: 2/4;
     display: grid;
-    grid-template-rows: repeat(2, 123px);
+    grid-template-rows: repeat(2, 1fr);
     row-gap: 20px;
 }
 
@@ -505,7 +507,7 @@ img {
     text-align: center;
     background-color: var(--white-opacity);
     padding: 10px 0 10px 0;
-    margin-left: 23px;
+    margin: 0 0 21px 23px;
 }
 
 .promo-item-button:hover {
@@ -592,6 +594,10 @@ img {
     margin: 59px 0 70px 0;
 }
 
+.popular-items-title {
+    width: 278px;
+}
+
 .popular-items-list {
     list-style: none;
     margin: 0;
@@ -648,6 +654,10 @@ img {
 
 /* Popular brands */
 
+.popular-brands-title {
+    width: 387px;
+}
+
 .popular-brands-list {
     list-style: none;
     margin: 0;
@@ -675,7 +685,7 @@ img {
 /* Service section */
 
 .service-section {
-    width: 940px;
+    width: 100%;
     background-color: var(--gray-service-and-footer);
     margin: 70px 0 70px 0;
 }
@@ -881,20 +891,40 @@ img {
     padding: 10px 0 10px 20px;
 }
 
-.sorting-section-list {
-    height: 38px;
+.sorting-title {
+    width: 220px;
+}
+
+.sorting-section {
+    min-height: 38px;
     background-color: var(--filter-background);
     grid-column: 2/2;
     margin: 0 0 28px 0;
     padding: 0;
-    list-style: none;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    align-items: baseline;
 }
 
-.sorting-title {
+.sorting-section-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-grow: 1;
     margin: 0;
+    padding: 0;
+}
+
+.sorting-button:last-child {
+    padding-right: 48px;
+}
+
+.arrow-sorting-icons {
+    width: 43px;
+    display: flex;
+    justify-items: space-around;
+    padding-right: 14px;
 }
 
 .filters-button {
@@ -911,11 +941,6 @@ img {
     background-color: var(--filter-background);
     padding: 0;
     margin: 0;
-}
-
-.sorting-button:last-child {
-    padding-right: 14px;
-
 }
 
 .sorting-button-text {
