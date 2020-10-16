@@ -12,7 +12,10 @@
         <a class="main-logo-container flex-centered" href="index.html">
           <img class="main-header-logo" src="img/main-logo-header.svg" width="107" height="17" alt="Логотип магазина">
         </a>
-        <input class="search-input flex-1" type="search" name="search" placeholder="Поиск">
+        <div class="input-position flex-1">
+          <label for="search-input" class="visually-hidden">Поиск по сайту</label>
+          <input class="search-input" id="search-input" type="search" name="search" placeholder="Поиск">
+        </div>
         <a class="bookmarks-cart bookmarks flex-centered" href="#">Закладки: 0</a>
         <a class="bookmarks-cart cart inner-page-cart flex-centered" href="#">Корзина: 10</a>
         <a class="order-button flex-centered" href="#">Оформить заказ</a>
@@ -27,7 +30,7 @@
             <div class="user-button-container">
               <a class="user-name header-button" href="#">Равшан Джамшутович</a>
               <button type="button" class="logout-button">
-                <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="logout-icon" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M20 8.5L11.125 0V6H5.125V11H11.125V17L20 8.5Z" fill="#C5C5C5"/>
                   <path d="M2.10598 13.952V3.048C2.12398 2.672 2.27698 1.991 3.11598 1.991H8.14297V0H3.11598C0.937975 0 0.111975 1.81 0.0869751 3.027V13.973C0.111975 15.189 0.937975 17 3.11598 17H8.14297V15.01H3.11598C2.27698 15.01 2.12398 14.327 2.10598 13.952Z" fill="#C5C5C5"/>
                 </svg>
@@ -65,6 +68,15 @@
         </ul>
       </nav>
     </header>
+
+    <!--пофиксить сетку с новыми центровщиками-->
+    <!--убрать лишние классы в каталоге-->
+    <!--добавить hover, focused, focused-within для карточек-->
+    <!--расставить в стилях cursor: pointer-->
+    <!--добавить элементам тени-->
+    <!--пересмотреть цвета с opacity-->
+    <!--переделать разметку карточек товаров для hover-->
+    <!--добавить модальное окно-->
 
     <main class="top-wrapper">
       <ul class="breadcrumbs">
@@ -160,7 +172,7 @@
                 <p class="popular-item-name">Перфоратор BOSCH<br>BFG 6000</p>
                 <span class="last-price">30500 Р.</span>
                 <span class="basic-button hot-price">25500 Р.</span>
-                <span class="basic-button new-item">New</span>
+                <span class="basic-button new-item new-popular">New</span>
               </div>
             </li>
             <li class="popular-item">
@@ -171,7 +183,7 @@
                 <p class="popular-item-name">Перфоратор BOSCH<br>BFG 3000</p>
                 <span class="last-price">22500 Р.</span>
                 <span class="basic-button hot-price">15500 Р.</span>
-                <span class="basic-button new-item">New</span>
+                <span class="basic-button new-item new-popular">New</span>
               </div>
             </li>
             <li class="popular-item">
@@ -191,7 +203,7 @@
               <div class="product-container">
                 <p class="popular-item-name">Перфоратор BOSCH<br>BFG 2000</p>
                 <span class="basic-button hot-price">12500 Р.</span>
-                <span class="basic-button new-item">New</span>
+                <span class="basic-button new-item new-popular">New</span>
               </div>
             </li>
             <li class="popular-item">
@@ -202,7 +214,7 @@
                 <p class="popular-item-name">Перфоратор BOSCH<br>BFG 3000</p>
                 <span class="last-price">22500 Р.</span>
                 <span class="basic-button hot-price">15500 Р.</span>
-                <span class="basic-button new-item">New</span>
+                <span class="basic-button new-item new-popular">New</span>
               </div>
             </li>
             <li class="popular-item">
@@ -222,7 +234,7 @@
               <div class="product-container">
                 <p class="popular-item-name">Перфоратор BOSCH<br>BFG 2000</p>
                 <span class="basic-button hot-price">12500 Р.</span>
-                <span class="basic-button new-item">New</span> 
+                <span class="basic-button new-item new-popular">New</span> 
               </div>
             </li>
           </ul>
