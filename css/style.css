@@ -195,12 +195,12 @@ img {
     background-color: var(--red-hover);
 }
 
-.basic-state:active {
-    background-color: var(--red-active);
-}
-
 .basic-state:focus {
     background-color: var(--red-hover);
+}
+
+.basic-state:active {
+    background-color: var(--red-active);
 }
 
 .flex-centered {
@@ -264,12 +264,12 @@ img {
     background-color: var(--basic-red);
 }
 
-.main-logo-container:active {
-    background-color: var(--red-active);
-}
-
 .main-logo-container:focus {
     background-color: var(--basic-red);
+}
+
+.main-logo-container:active {
+    background-color: var(--red-active);
 }
 
 .main-logo-container::after {
@@ -279,7 +279,7 @@ img {
     background: var(--basic-red);
     box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
     position: absolute;
-    top: 42px;
+    top: 41px;
     left: 0;
 }
 
@@ -313,7 +313,6 @@ img {
     border: none;
     padding: 0 0 0 42px;
     outline: none;
-    cursor: pointer;
 }
 
 .search-input:focus {
@@ -347,21 +346,21 @@ img {
     color: var(--basic-white);
 }
 
-.search-input:active::placeholder {
-    opacity: 50%;
-}
-
 .input-position:hover::before {
     opacity: 1;
-}
-
-.input-position:active::before {
-    opacity: 30%;
 }
 
 .input-position:focus-within::before {
     background-image: url("../img/icon-search-focus.svg");
     opacity: 1;
+}
+
+.search-input:active::placeholder {
+    opacity: 50%;
+}
+
+.input-position:active::before {
+    opacity: 30%;
 }
 
 .inner-page-cart {
@@ -381,13 +380,13 @@ img {
     background-color: var(--green-hover);
 }
 
+.order-button:focus {
+    background-color: var(--green-hover);
+}
+
 .order-button:active {
     background-color: var(--basic-green);
     color: var(--white-opacity-half);
-}
-
-.order-button:focus {
-    background-color: var(--green-hover);
 }
 
 .bookmarks-cart {
@@ -402,13 +401,13 @@ img {
     color: var(--basic-white);
 }
 
+.bookmarks-cart:focus {
+    color: var(--basic-white);
+}
+
 .bookmarks-cart:active {
     background-color: var(--blue-active);
     color: var(--white-opacity-half);
-}
-
-.bookmarks-cart:focus {
-    color: var(--basic-white);
 }
 
 .bookmarks::before {
@@ -441,24 +440,24 @@ img {
     opacity: 1;
 }
 
-.bookmarks:active::before {
-    opacity: 30%;
-}
-
 .bookmarks:focus::before {
     opacity: 1;
+}
+
+.bookmarks:active::before {
+    opacity: 30%;
 }
 
 .cart:hover::before {
     opacity: 1;
 }
 
-.cart:active::before {
-    opacity: 30%;
-}
-
 .cart:focus::before {
     opacity: 1;
+}
+
+.cart:active::before {
+    opacity: 30%;
 }
 
 .main-header-info {
@@ -531,12 +530,12 @@ img {
     color: var(--basic-red);
 }
 
-.header-button:active {
-    color: var(--gray-filter-buttons);
-}
-
 .header-button:focus {
     color: var(--basic-red);
+}
+
+.header-button:active {
+    color: var(--gray-filter-buttons);
 }
 
 .header-user-block {
@@ -577,12 +576,12 @@ img {
     background-image: url("../img/icon-login-hover.svg");
 }
 
-.login-button:active::before {
-    background-image: url("../img/icon-login-active.svg");
-}
-
 .login-button:focus::before {
     background-image: url("../img/icon-login-hover.svg");
+}
+
+.login-button:active::before {
+    background-image: url("../img/icon-login-active.svg");
 }
 
 .register-button {
@@ -608,6 +607,10 @@ img {
     fill: var(--blue-icon);
 }
 
+.user-button:focus {
+    fill: var(--blue-icon);
+}
+
 .user-button:active {
     color: var(--gray-filter-buttons);
 }
@@ -623,10 +626,13 @@ img {
     color: var(--basic-red);
 }
 
+.user-info-link:focus {
+    color: var(--basic-red);
+}
+
 .user-info-link:active {
     color: var(--gray-filter-buttons);
 }
-
 
 .main-navigation {
     width: 940px;
@@ -651,13 +657,13 @@ img {
     background-color: var(--basic-blue);
 }
 
+.main-navigation a:focus {
+    background-color: var(--basic-blue);
+}
+
 .main-navigation a:active {
     background-color: var(--blue-active-dark);
     color: var(--blue-light);
-}
-
-.main-navigation a:focus {
-    background-color: var(--basic-blue);
 }
 
 /* Promo section */
@@ -818,14 +824,14 @@ img {
     background-color: var(--gray-hover);
 }
 
-.promo-item-button:active {
-    border: solid 1px var(--basic-black);
-    background-color: var(--gray-active);
-}
-
 .promo-item-button:focus {
     border: solid 1px var(--basic-black);
     background-color: var(--gray-hover);
+}
+
+.promo-item-button:active {
+    border: solid 1px var(--basic-black);
+    background-color: var(--gray-active);
 }
 
 .promo-slider-wrapper {
@@ -1044,7 +1050,7 @@ img {
 
 .modal-purchase {
     width: 620px;
-    height: 282px;
+    min-height: 282px;
     background-color: var(--basic-white);
     display: flex;
     flex-direction: column;
@@ -1052,6 +1058,7 @@ img {
     box-sizing: border-box;
     border-top: solid 7px var(--basic-red);
     display: none;
+    
 }
 
 .modal-close {
@@ -1116,12 +1123,12 @@ img {
     color: var(--basic-red);
 }
 
-.back-to-catalog:active {
-    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
-}
-
 .back-to-catalog:focus {
     color: var(--basic-red);
+}
+
+.back-to-catalog:active {
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* Popular brands */
@@ -1168,13 +1175,13 @@ img {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 
+.popular-brands-item:focus {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
 .popular-brands-item:active {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
     opacity: 30%;
-}
-
-.popular-brands-item:focus {
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 .brand-item-pic {
@@ -1224,7 +1231,7 @@ img {
     content: "";
     width: 10px;
     height: 279px;
-    background-image: url("../img/service-shadow.svg");
+    background-image: url("../img/service-shadow.png");
     background-repeat: no-repeat;
     background-position: 0 0;
     position: absolute;
@@ -1311,14 +1318,14 @@ img {
     color: var(--basic-white);
 }
 
-.service-button:active {
-    background-color: var(--basic-white);
-    color: var(--blue-light);
-}
-
 .service-button:focus {
     background-color: var(--basic-blue);
     color: var(--basic-white);
+}
+
+.service-button:active {
+    background-color: var(--basic-white);
+    color: var(--blue-light);
 }
 
 .service-item-name {
@@ -1603,12 +1610,12 @@ img {
     background-color: var(--green-hover);
 }
 
-.buy-button:active {
-    background-color: var(--green-active);
-}
-
 .buy-button:focus {
     background-color: var(--green-hover);
+}
+
+.buy-button:active {
+    background-color: var(--green-active);
 }
 
 .send-bookmark-button {
@@ -1621,12 +1628,12 @@ img {
     border: solid 3px var(--blue-light);
 }
 
-.send-bookmark-button:active {
-    opacity: 50%;
-}
-
 .send-bookmark-button:focus {
     border: solid 3px var(--blue-light);
+}
+
+.send-bookmark-button:active {
+    opacity: 50%;
 }
 
 .pagination {
@@ -1670,12 +1677,12 @@ img {
     border: solid 1px var(--gray-filter-buttons);
 }
 
-.pages-button:active {
-    border: solid 1px var(--basic-red);
-}
-
 .pages-button:focus {
     border: solid 1px var(--gray-filter-buttons);
+}
+
+.pages-button:active {
+    border: solid 1px var(--basic-red);
 }
 
 .info-section {
@@ -1744,13 +1751,13 @@ img {
     text-decoration: underline;
 }
 
+.footer-navigation-link-top:focus {
+    text-decoration: underline;
+}
+
 .footer-navigation-link-top:active {
     text-decoration: none;
     color: var(--gray-service-and-footer);
-}
-
-.footer-navigation-link-top:focus {
-    text-decoration: underline;
 }
 
 .footer-navigation-link-bottom {
@@ -1761,13 +1768,13 @@ img {
     text-decoration: underline;
 }
 
+.footer-navigation-link-bottom:focus {
+    text-decoration: underline;
+}
+
 .footer-navigation-link-bottom:active {
     text-decoration: none;
     color: var(--yellow-active);
-}
-
-.footer-navigation-link-bottom:focus {
-    text-decoration: underline;
 }
 
 .footer-bottom-wrapper {
@@ -1815,11 +1822,11 @@ img {
     background-color: var(--basic-red);
 }
 
-.social-button:active {
+.social-button:focus {
     background-color: var(--basic-red);
 }
 
-.social-button:focus {
+.social-button:active {
     background-color: var(--basic-red);
 }
 
@@ -1844,13 +1851,13 @@ img {
     text-decoration: underline;
 }
 
+.copyright-link:focus {
+    text-decoration: underline;
+}
+
 .copyright-link:active {
     text-decoration: none;
     color: var(--basic-red);
-}
-
-.copyright-link:focus {
-    text-decoration: underline;
 }
 
 
