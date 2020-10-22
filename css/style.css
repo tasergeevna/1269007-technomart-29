@@ -184,7 +184,7 @@ img {
     text-transform: uppercase;
     text-align: center;
     box-sizing: border-box;
-    padding: 6px 3px 6px 3px;
+    padding: 6px 3px;
 }
 
 .basic-button {
@@ -197,7 +197,7 @@ img {
     text-transform: uppercase;
     text-align: center;
     box-sizing: border-box;
-    padding: 10px 5px 10px 5px;
+    padding: 10px 5px;
 }
 
 .basic-state:hover {
@@ -555,7 +555,7 @@ img {
 .user-button-container {
     min-width: 299px;
     box-sizing: border-box;
-    padding: 12px 5px 12px 5px;
+    padding: 12px 5px;
     text-align: right;
     background-color: var(--basic-white);
     color: var(--basic-black);
@@ -621,7 +621,7 @@ img {
 }
 
 .register-button {
-    padding: 12px 24px 12px 24px; 
+    padding: 12px 24px; 
 }
 
 .login-container {
@@ -889,7 +889,7 @@ img {
     text-align: center;
     background-color: var(--white-opacity);
     box-sizing: border-box;
-    padding: 10px 5px 10px 5px;
+    padding: 10px 5px;
     margin: 0 0 21px 23px;
     border: solid 1px transparent;
 }
@@ -1057,6 +1057,7 @@ img {
 
 .item-pic-container {
     height: 160px;
+    object-fit: contain;
 }
 
 .popular-item-pic {
@@ -1093,7 +1094,7 @@ img {
     font-size: 17px;
     line-height: 18px;
     box-sizing: border-box;
-    padding: 10px 5px 10px 5px;
+    padding: 10px 5px;
     background-image:
     linear-gradient(225deg, white 10%, transparent 10%),
     linear-gradient(315deg, white 10%, transparent 10%);
@@ -1118,17 +1119,24 @@ img {
 
 /* Modals */
 
+
+.modal-centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+}
+
 .modal {
     width: 620px;
     background-color: var(--basic-white);
     display: flex;
     flex-direction: column;
-    align-items: center;
     position: relative;
     box-sizing: border-box;
     border-top: solid 7px var(--basic-red);
-    box-shadow: 0 4px 20px 0 rgba(0,0,0,0.15);
-    
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,0.15); 
 }
 
 .modal-purchase {
@@ -1139,6 +1147,7 @@ img {
     box-sizing: border-box;
     border-top: solid 7px var(--basic-red);
     display: none;
+   
 }
 
 .modal-close {
@@ -1148,6 +1157,8 @@ img {
     position: absolute;
     top: 11px;
     right: 11px;
+    cursor: pointer;
+    z-index: 2;
 }
 
 .purchase-success-text {
@@ -1184,7 +1195,7 @@ img {
 
 .modal-purchase-buttons {
     width: 100%;
-    padding: 37px 0 37px 0;
+    padding: 37px 0;
     background-color: var(--modal-gray);
     display: flex;
     justify-content: center;
@@ -1196,10 +1207,13 @@ img {
     border: none;
 }
 
-.modal-button {
-    margin-right: 10px;
+.modal-purchase-buttons button {
     border: none;
     outline: none;
+}
+
+.modal-button {
+    margin-right: 10px;
 }
 
 .back-to-catalog:hover {
@@ -1214,15 +1228,22 @@ img {
     box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
 }
 
+.feedback-modal-wrapper {
+   display: none;
+}
+
 .feedback-modal {
     width: 460px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;  
 }
 
 .feedback-form {
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .feedback-input::placeholder {
@@ -1230,16 +1251,69 @@ img {
     font-weight: 400;
     font-size: 13px;
     line-height: 24px;
+    color: var(--gray-filter-buttons);
 }
 
-.modal-map {
-    display: none;
-    position: fixed;
+.contacts-modal-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 39px;
+}
+
+.feedback-input {
+    width: 220px;
+    margin: 11px 0 13px 0;
+    -moz-appearance: none;
+    outline: none;
+    border: 2px solid var(--gray-filter-buttons);
+    border-radius: 2px;
+    box-sizing: border-box;
+    padding: 10px 5px;
+}
+
+.feedback-input:first-of-type {
+    margin-right: 20px;
+}
+
+.feedback-input-field {
+    width: 460px;
+    min-height: 112px;
+    -moz-appearance: none;
+    outline: none;
+    resize: none;
+    border: 2px solid var(--gray-filter-buttons);
+    border-radius: 2px;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    margin: 11px 0 37px 0;
+}
+
+.input-wrapper {
+    margin: 0;
 }
 
 .feedback-label {
     display: block;
 }
+
+.modal-map {
+    width: 943px;
+    min-height: 449px;
+    position: relative;
+    background-color: var(--modal-gray);
+    background-image: url("../img/map-full.jpg");
+    box-sizing: border-box;
+    border-top: solid 7px var(--basic-red);
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,0.15); 
+    display: none;
+}
+
+.map-full {
+    height: 100%;
+    position: absolute;
+    border: 0;
+}
+
 
 /* Popular brands */
 
@@ -1269,6 +1343,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    object-fit: contain;
 }
 
 .brand-item-link {
@@ -1326,7 +1401,7 @@ img {
 .service-buttons-list {
     list-style: none;
     margin: 0 0 54px 0;
-    padding: 49px 0 49px 0;
+    padding: 49px 0;
     position: relative;
 }
 
@@ -1355,7 +1430,7 @@ img {
 }
 
 .selected-service-item {
-    display: inline-block;
+    display: block;
 }
 
 .service-delivery::after {
@@ -1415,7 +1490,7 @@ img {
     margin-top: 26px;
     width: 195px;
     box-sizing: border-box;
-    padding: 10px 5px 10px 5px;
+    padding: 10px 5px;
 }
 
 .selected-service-button {
@@ -1448,6 +1523,12 @@ img {
     font-size: 13px;
     line-height: 24px;
     margin: 0;
+}
+
+.servise-slide {
+    position: relative;
+    z-index: 2;
+    padding-right: 50%;
 }
 
 /* Delivery section */
@@ -1630,13 +1711,14 @@ img {
     grid-column: 1/1;
 }
 
-.filters-title-container {
-    background-color: var(--filter-background);
-}
+
 
 .filters-title {
     margin: 0;
+    box-sizing: border-box;
     padding: 10px 0 10px 20px;
+    background-color: var(--filter-background);
+    
 }
 
 .filter-form {
@@ -1850,7 +1932,7 @@ border-bottom: solid 1px var(--gray-active);
     line-height: 18px;
     width: 95px;
     box-sizing: border-box;
-    padding: 10px 5px 10px 5px;
+    padding: 10px 5px;
     text-align: center;
     border: none;
     border-radius: 5px;
@@ -1901,7 +1983,7 @@ input::-webkit-inner-spin-button {
 .filters-button {
     width: 220px;
     box-sizing: border-box;
-    padding: 10px 5px 10px 5px;
+    padding: 10px 5px;
     background-color: var(--basic-white);
     border: solid 1px var(--gray-border);
     margin-top: 10px;
@@ -1979,7 +2061,6 @@ input::-webkit-inner-spin-button {
     border-bottom: 11px solid var(--basic-red);
 }
 
-
 .arrow-sorting-down:hover {
     border-top: 11px solid var(--basic-black);
 }
@@ -2030,7 +2111,7 @@ input::-webkit-inner-spin-button {
 .popular-item-button {
     min-width: 135px;
     box-sizing: border-box;
-    padding: 10px 5px 10px 5px;
+    padding: 10px 5px;
     text-align: center;
     border-radius: 2px;
     font-size: 14px;
@@ -2094,7 +2175,7 @@ input::-webkit-inner-spin-button {
     border-radius: 2px;
     box-sizing: border-box;
     margin-right: 10px;
-    padding: 10px 15px 10px 15px;
+    padding: 10px 15px;
 }
 
 .next-page-button {
@@ -2231,7 +2312,7 @@ input::-webkit-inner-spin-button {
     width: 100%;
     min-width: 940px;
     background-color: var(--basic-blue);
-    padding: 35px 0 35px 0;
+    padding: 35px 0;
 }
 
 .footer-bottom-bar {

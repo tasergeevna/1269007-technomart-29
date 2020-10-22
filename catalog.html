@@ -32,7 +32,7 @@
           <div class="header-user-block flex-column">
               <div class="user-button-container">
                 <a class="header-button" href="#">Равшан Джамшутович</a>
-                <button type="button" class="logout-button">
+                <button type="button" class="logout-button" aria-label="Выйти">
                   <svg class="logout-icon" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path class="logout-icon" d="M20 8.5L11.125 0V6H5.125V11H11.125V17L20 8.5Z" fill="currentColor"/>
                     <path class="logout-icon" d="M2.10598 13.952V3.048C2.12398 2.672 2.27698 1.991 3.11598 1.991H8.14297V0H3.11598C0.937975 0 0.111975 1.81 0.0869751 3.027V13.973C0.111975 15.189 0.937975 17 3.11598 17H8.14297V15.01H3.11598C2.27698 15.01 2.12398 14.327 2.10598 13.952Z" fill="currentColor"/>
@@ -74,7 +74,6 @@
         </nav>
       </div>
     </header>
-    <!--пересмотреть цвета с opacity-->
   
     <main class="top-wrapper">
       <div class="inner-page-wrapper">
@@ -104,9 +103,7 @@
 
         <div class="catalog-wrapper">
           <div class="filters">
-            <div class="filters-title-container">
-              <h2 class="catalog-link filters-title">Фильтр:</h2>
-            </div>
+            <h2 class="catalog-link filters-title">Фильтр:</h2>
             <form class="filter-form" method="get" action="https://echo.htmlacademy.ru" target="_blank">
               <fieldset>
                 <legend class="legend-heading">Цена:</legend>
@@ -168,7 +165,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <button class="catalog-link filters-button" type="submit" value="Показать">Показать</button>
+              <button class="catalog-link filters-button" type="submit">Показать</button>
             </form>
           </div>
           
@@ -178,18 +175,18 @@
               <h2 class="catalog-link filters-title sorting-title">Сортировка:</h2>
               <ul class="sorting-section-list">
                 <li>
-                    <button class="catalog-link sorting-button" type="button" name="price" value="По цене"><span class="sorting-button-text">По цене</span></button>
+                    <button class="catalog-link sorting-button" type="button"><span class="sorting-button-text">По цене</span></button>
                 </li>
                 <li>
-                    <button class="catalog-link sorting-button" type="button" name="type" value="По типу"><span class="sorting-button-text">По типу</span></button>
+                    <button class="catalog-link sorting-button" type="button"><span class="sorting-button-text">По типу</span></button>
                 </li>
                 <li>
-                  <button class="catalog-link sorting-button" type="button" name="functional" value="По функционалу"><span class="sorting-button-text">По функционалу</span></button>
+                  <button class="catalog-link sorting-button" type="button"><span class="sorting-button-text">По функционалу</span></button>
                 </li>
               </ul>
               <div class="arrow-sorting-icons">
-                <button class="arrow-sorting-up" type="button" name="up" value="По возрастанию"></button>
-                <button class="arrow-sorting-down" type="button" name="down" value="По убыванию"></button>
+                <button class="arrow-sorting-up" type="button" aria-label="Сортировка по возрастанию"></button>
+                <button class="arrow-sorting-down" type="button" aria-label="Сортировка по убыванию"></button>
               </div>
             </div>
 
@@ -325,16 +322,18 @@
               </li>
             </ul>
 
-            <div class="modal modal-purchase">
-              <button class="modal-close" type="button" name="close" value="close">
-                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M13.273 10.5L20.695 3.07799C21.084 2.68899 21.084 2.05299 20.695 1.66399L19.336 0.304995C18.947 -0.0840054 18.311 -0.0840054 17.922 0.304995L10.5 7.72699L3.07799 0.304995C2.68899 -0.0840054 2.05299 -0.0840054 1.66399 0.304995L0.304995 1.66399C-0.0840054 2.05299 -0.0840054 2.68899 0.304995 3.07799L7.72699 10.5L0.305995 17.922C-0.0830054 18.311 -0.0830054 18.947 0.305995 19.336L1.66499 20.695C2.05399 21.084 2.68999 21.084 3.07899 20.695L10.501 13.273L17.923 20.695C18.312 21.084 18.948 21.084 19.337 20.695L20.696 19.336C21.085 18.947 21.085 18.311 20.696 17.922L13.273 10.5Z" fill="#EE3643"/>
-                </svg>
-              </button>
-              <span class="purchase-success-text">Товар добавлен в корзину!</span>
-              <div class="modal-purchase-buttons">
-                <a class="basic-button basic-state modal-button" href="#">Оформить заказ</a>
-                <button class="back-to-catalog basic-button modal-button" type="button" name="close-modal" value="Продолжить покупки">Продолжить покупки</button>
+            <div class="modal-centered">
+              <div class="modal modal-purchase">
+                <button class="modal-close" type="button" aria-label="Закрыть">
+                  <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.273 10.5L20.695 3.07799C21.084 2.68899 21.084 2.05299 20.695 1.66399L19.336 0.304995C18.947 -0.0840054 18.311 -0.0840054 17.922 0.304995L10.5 7.72699L3.07799 0.304995C2.68899 -0.0840054 2.05299 -0.0840054 1.66399 0.304995L0.304995 1.66399C-0.0840054 2.05299 -0.0840054 2.68899 0.304995 3.07799L7.72699 10.5L0.305995 17.922C-0.0830054 18.311 -0.0830054 18.947 0.305995 19.336L1.66499 20.695C2.05399 21.084 2.68999 21.084 3.07899 20.695L10.501 13.273L17.923 20.695C18.312 21.084 18.948 21.084 19.337 20.695L20.696 19.336C21.085 18.947 21.085 18.311 20.696 17.922L13.273 10.5Z" fill="#EE3643"/>
+                  </svg>
+                </button>
+                <span class="purchase-success-text">Товар добавлен в корзину!</span>
+                <div class="modal-purchase-buttons">
+                  <a class="basic-button basic-state modal-button" href="#">Оформить заказ</a>
+                  <button class="back-to-catalog basic-button modal-button" type="button">Продолжить покупки</button>
+                </div>
               </div>
             </div>
 
