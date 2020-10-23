@@ -1712,13 +1712,11 @@ img {
 }
 
 
-
 .filters-title {
     margin: 0;
     box-sizing: border-box;
-    padding: 10px 0 10px 20px;
-    background-color: var(--filter-background);
-    
+    padding: 10px 5px;
+    background-color: var(--filter-background);  
 }
 
 .filter-form {
@@ -1951,17 +1949,17 @@ input::-webkit-inner-spin-button {
 
 .sorting-title {
     width: 220px;
+    background-color: var(--filter-background); 
+    margin: 0;
 }
 
 .sorting-section {
-    min-height: 38px;
     background-color: var(--filter-background);
     grid-column: 2/2;
     margin: 0 0 28px 0;
-    padding: 0;
+    padding: 10px 0 10px 10px;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    align-items: start;
 }
 
 .sorting-section-list {
@@ -1973,6 +1971,10 @@ input::-webkit-inner-spin-button {
     flex-grow: 1;
     margin: 0;
     padding: 0;
+}
+
+.sorting-button {
+    display: flex;
 }
 
 .sorting-button:last-child {
@@ -2018,7 +2020,6 @@ input::-webkit-inner-spin-button {
 .arrow-sorting-icons {
     min-width: 43px;
     display: flex;
-    flex-wrap: wrap;
     padding-right: 14px;
 }
 
