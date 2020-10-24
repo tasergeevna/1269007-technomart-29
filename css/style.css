@@ -1109,11 +1109,13 @@ img {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 
-.popular-item:hover .item-pic-container {
+.popular-item:hover .item-pic-container,
+.popular-item:focus-within .item-pic-container {
     visibility: hidden;
 }
 
-.popular-item:hover .item-buttons-container {
+.popular-item:hover .item-buttons-container, 
+.popular-item:focus-within .item-buttons-container {
     visibility: visible;
 }
 
@@ -1360,7 +1362,7 @@ img {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 
-.popular-brands-item:focus {
+.popular-brands-item:focus-within {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 
