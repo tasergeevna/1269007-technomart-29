@@ -583,7 +583,7 @@ img {
     background-image: url("../img/icon-user-hover.svg");
 }
 
-.user-button-container:focus::after {
+.user-button-container:focus-within::after {
     background-image: url("../img/icon-user-hover.svg");
 }
 
