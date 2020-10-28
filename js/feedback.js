@@ -35,16 +35,12 @@ feedbackClose.addEventListener("click", function (evt) {
 feedbackForm.addEventListener("submit", function (evt) {
     if (!feedbackName.value || !feedbackEmail.value || !feedbackLetter.value) {
       evt.preventDefault();
-      console.log(feedbackModal);
         feedbackModal.classList.remove("modal-error");
         feedbackModal.offsetWidth = feedbackModal.offsetWidth;
         feedbackModal.classList.add("modal-error");
-    } else {
-        if (isStorageSupport)
-        {localStorage.setItem("login", feedbackName.value);
+    } else if (isStorageSupport) {localStorage.setItem("login", feedbackName.value);
         localStorage.setItem("email", feedbackEmail.value);
-    }
-    }
+      }
 });
 
 window.addEventListener("keydown", function (evt) {

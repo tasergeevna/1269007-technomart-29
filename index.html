@@ -13,10 +13,10 @@
           <a class="main-logo-container flex-centered" href="index.html">
             <img class="main-header-logo" src="img/main-logo-header.svg" width="107" height="17" alt="Логотип магазина Техномарт">
           </a>
-          <div class="input-position flex-1">
+          <form action="https://echo.htmlacademy.ru" method="get" class="input-position flex-1">
             <label for="search-input" class="visually-hidden">Поиск по сайту</label>
             <input class="search-input" id="search-input" type="search" name="search" placeholder="Поиск:">
-          </div>
+          </form>
           <a class="bookmarks-cart bookmarks flex-centered" href="#" aria-label="Перейти на страницу закладок">Закладки: 0</a>
           <a class="bookmarks-cart cart flex-centered" href="#" aria-label="Перейти в корзину">Корзина: 0</a>
           <a class="order-button flex-centered" href="#" aria-label="Перейти на страницу оформления заказа">Оформить заказ</a>
@@ -102,7 +102,7 @@
               </div>
               <a class="basic-button promo-slide-button basic-state" href="catalog.html">Открыть каталог</a>
             </li>
-            <li class="promo-slide drill">
+            <li class="promo-slide drill display-none">
               <div class="promo-slide-header">
                 <h3 class="promo-slide-title">Дрели</h3>
                 <span class="promo-slide-slogan">Соседям на радость</span>
@@ -362,18 +362,18 @@
             </div>
           </div>
          
-          
-          <div class="modal-map display-none modal-centered">
-            <button class="modal-close" type="button" aria-label="Закрыть модальное окно">
-              <svg aria-hidden="true" focusable="false" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M13.273 10.5L20.695 3.07799C21.084 2.68899 21.084 2.05299 20.695 1.66399L19.336 0.304995C18.947 -0.0840054 18.311 -0.0840054 17.922 0.304995L10.5 7.72699L3.07799 0.304995C2.68899 -0.0840054 2.05299 -0.0840054 1.66399 0.304995L0.304995 1.66399C-0.0840054 2.05299 -0.0840054 2.68899 0.304995 3.07799L7.72699 10.5L0.305995 17.922C-0.0830054 18.311 -0.0830054 18.947 0.305995 19.336L1.66499 20.695C2.05399 21.084 2.68999 21.084 3.07899 20.695L10.501 13.273L17.923 20.695C18.312 21.084 18.948 21.084 19.337 20.695L20.696 19.336C21.085 18.947 21.085 18.311 20.696 17.922L13.273 10.5Z" fill="#EE3643"/>
-              </svg>
-            </button>
-            <h2 class="visually-hidden">Как до нас добраться</h2>
-            <iframe class="map-full" src="https://yandex.by/map-widget/v1/-/CCQ~NCgxpC" width="100%" height="449" allowfullscreen="" aria-hidden="false" tabindex="0" title="Офис компани по адресу г. Санк-Петербург, ул. Большая Конюшенная 19/8">
-            </iframe>
+          <div class="modal-map-wrapper display-none modal-centered">
+            <div class="modal-map">
+              <button class="modal-close" type="button" aria-label="Закрыть модальное окно">
+                <svg aria-hidden="true" focusable="false" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.273 10.5L20.695 3.07799C21.084 2.68899 21.084 2.05299 20.695 1.66399L19.336 0.304995C18.947 -0.0840054 18.311 -0.0840054 17.922 0.304995L10.5 7.72699L3.07799 0.304995C2.68899 -0.0840054 2.05299 -0.0840054 1.66399 0.304995L0.304995 1.66399C-0.0840054 2.05299 -0.0840054 2.68899 0.304995 3.07799L7.72699 10.5L0.305995 17.922C-0.0830054 18.311 -0.0830054 18.947 0.305995 19.336L1.66499 20.695C2.05399 21.084 2.68999 21.084 3.07899 20.695L10.501 13.273L17.923 20.695C18.312 21.084 18.948 21.084 19.337 20.695L20.696 19.336C21.085 18.947 21.085 18.311 20.696 17.922L13.273 10.5Z" fill="#EE3643"/>
+                </svg>
+              </button>
+              <h2 class="visually-hidden">Как до нас добраться</h2>
+              <iframe class="map-full" src="https://yandex.by/map-widget/v1/-/CCQ~NCgxpC" width="100%" height="449" allowfullscreen="" aria-hidden="false" tabindex="0" title="Офис компани по адресу г. Санк-Петербург, ул. Большая Конюшенная 19/8">
+              </iframe>
+            </div>
           </div>
-          
 
         </div>
       </div>
@@ -465,5 +465,8 @@
     </footer>
     <script src="js/purchase.js"></script>
     <script src="js/feedback.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/promo-slider.js"></script>
+    <script src="js/service-slider.js"></script>
   </body>
 </html>
