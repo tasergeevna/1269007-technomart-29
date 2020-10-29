@@ -13,8 +13,8 @@
           <a class="main-logo-container flex-centered" href="index.html" aria-label="Перейти на главную страницу">
             <img class="main-header-logo" src="img/main-logo-header.svg" width="107" height="17" alt="Логотип магазина Техномарт">
           </a>
-          <form action="https://echo.htmlacademy.ru" method="get" class="input-position flex-1">
-            <label for="search-input" class="visually-hidden">Поиск по сайту</label>
+          <form class="input-position flex-1" action="https://echo.htmlacademy.ru" method="get">
+            <label class="visually-hidden" for="search-input">Поиск по сайту</label>
             <input class="search-input" id="search-input" type="search" name="search" placeholder="Поиск">
           </form>
           <a class="bookmarks-cart bookmarks inner-page-bookmarks flex-centered" href="#" aria-label="Перейти на страницу закладок">Закладки: 0</a>
@@ -31,8 +31,13 @@
           </div>
           <div class="header-user-block flex-column">
               <div class="user-button-container">
+                <a class="icon-user" href="#" aria-label="Перейти в личный кабинет">
+                  <svg class="icon-user-pic" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.881 14.166C15.737 13.431 13.625 12.5 12.674 11.776C12.017 11.275 11.904 10.158 12.157 9.361C13.275 8.458 14.021 6.884 14.021 5.083C14.021 2.276 12.221 0 10 0C7.77902 0 5.97901 2.276 5.97901 5.083C5.97901 6.884 6.72501 8.457 7.84201 9.36C8.09501 10.158 7.98302 11.275 7.32502 11.776C6.37502 12.5 4.26201 13.43 2.11801 14.166C-0.0259852 14.902 1.48343e-05 18 1.48343e-05 18H20C20 18 20.025 14.901 17.881 14.166Z" fill="currentColor"/>
+                  </svg>
+                </a>
                 <a class="header-button" href="#" aria-label="Перейти в личный кабинет">Равшан Джамшутович</a>
-                <button type="button" class="logout-button" aria-label="Выйти из личного кабинета">
+                <button class="logout-button" type="button" aria-label="Выйти из личного кабинета">
                   <svg aria-hidden="true" focusable="false" class="logout-icon" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path class="logout-icon" d="M20 8.5L11.125 0V6H5.125V11H11.125V17L20 8.5Z" fill="currentColor"/>
                     <path class="logout-icon" d="M2.10598 13.952V3.048C2.12398 2.672 2.27698 1.991 3.11598 1.991H8.14297V0H3.11598C0.937975 0 0.111975 1.81 0.0869751 3.027V13.973C0.111975 15.189 0.937975 17 3.11598 17H8.14297V15.01H3.11598C2.27698 15.01 2.12398 14.327 2.10598 13.952Z" fill="currentColor"/>
@@ -122,32 +127,30 @@
                     <label class="max-price">
                       <input type="number" name="max-price" value="30000">
                     </label>
-        
                   </div>
-          
                 </div>
               </fieldset>
               <fieldset>
                 <legend class="legend-heading">Производители:</legend>
                 <ul class="brands-filter filter-list">
                   <li class="filter-option filter-checkbox">
-                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="BOSCH" id="filter-BOSCH" checked>
+                    <input class="visually-hidden filter-input-checkbox" type="checkbox" id="filter-BOSCH" name="BOSCH" checked>
                     <label for="filter-BOSCH">BOSCH</label>
                   </li>
                   <li class="filter-option filter-checkbox">
-                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="ИНТЕРСКОЛ" id="filter-ИНТЕРСКОЛ">
+                    <input class="visually-hidden filter-input-checkbox" type="checkbox" id="filter-ИНТЕРСКОЛ" name="ИНТЕРСКОЛ">
                     <label for="filter-ИНТЕРСКОЛ">ИНТЕРСКОЛ</label>
                   </li>
                   <li class="filter-option filter-checkbox">
-                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="Makita" id="filter-Makita" checked>
+                    <input class="visually-hidden filter-input-checkbox" type="checkbox" id="filter-Makita" name="Makita" checked>
                     <label for="filter-Makita">Makita</label>
                   </li>
                   <li class="filter-option filter-checkbox">
-                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="DeWALT" id="filter-DeWALT">
+                    <input class="visually-hidden filter-input-checkbox" type="checkbox" id="filter-DeWALT" name="DeWALT">
                     <label for="filter-DeWALT">DeWALT</label>
                   </li>
                   <li class="filter-option filter-checkbox">
-                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="HITACHI" id="filter-HITACHI">
+                    <input class="visually-hidden filter-input-checkbox" type="checkbox" id="filter-HITACHI" name="HITACHI">
                     <label for="filter-HITACHI">HITACHI</label>
                   </li>
                 </ul>
@@ -156,11 +159,11 @@
                 <legend class="legend-heading">Питание:</legend>
                 <ul class="supply-filter filter-list">
                   <li class="filter-option filter-radio">
-                    <input class="visually-hidden filter-input-radio filter-input" type="radio" name="supply-type" value="rechargeable" id="filter-rechargeable" checked>
+                    <input class="visually-hidden filter-input-radio filter-input" type="radio" id="filter-rechargeable" name="supply-type" value="rechargeable" checked>
                     <label for="filter-rechargeable">Аккумуляторные</label>
                   </li>
                   <li class="filter-option filter-radio">
-                    <input class="visually-hidden filter-input-radio filter-input" type="radio" name="supply-type" value="network" id="filter-network">
+                    <input class="visually-hidden filter-input-radio filter-input" type="radio" id="filter-network" name="supply-type" value="network">
                     <label for="filter-network">Сетевые</label>
                   </li>
                 </ul>
@@ -175,20 +178,25 @@
               <h2 class="catalog-link sorting-title">Сортировка:</h2>
               <ul class="sorting-section-list">
                 <li>
-                    <button class="catalog-link sorting-button" type="button"><span class="sorting-button-text">По цене</span></button>
+                    <button class="catalog-link sorting-button" type="button">
+                      <span class="sorting-button-text">По цене</span>
+                    </button>
                 </li>
                 <li>
-                    <button class="catalog-link sorting-button" type="button"><span class="sorting-button-text">По типу</span></button>
+                    <button class="catalog-link sorting-button" type="button">
+                      <span class="sorting-button-text">По типу</span>
+                    </button>
                 </li>
                 <li>
-                  <button class="catalog-link sorting-button" type="button"><span class="sorting-button-text">По функционалу</span></button>
+                  <button class="catalog-link sorting-button" type="button">
+                    <span class="sorting-button-text">По функционалу</span>
+                  </button>
                 </li>
               </ul>
               <div class="arrow-sorting-icons">
                 <button class="arrow-sorting-up" type="button" aria-label="Сортировка по возрастанию"></button>
                 <button class="arrow-sorting-down" type="button" aria-label="Сортировка по убыванию"></button>
               </div>
-              
             </div>
 
             <ul class="all-items">
@@ -339,10 +347,18 @@
             </div>
 
             <ul class="pagination">
-              <li class="pages-button current-page"><a class="catalog-link" aria-label="Первая страница каталога">1</a></li>
-              <li class="pages-button"><a class="catalog-link" href="blank.html" aria-label="Вторая страница каталога">2</a></li>
-              <li class="pages-button"><a class="catalog-link" href="blank.html" aria-label="Третья страница каталога">3</a></li>
-              <li><button class="catalog-link pages-button next-page-button" type="button" aria-label="Перейти на следующую страницу каталога">Следующая</button></li>
+              <li class="pages-button current-page">
+                <a class="catalog-link" aria-label="Первая страница каталога">1</a>
+              </li>
+              <li class="pages-button">
+                <a class="catalog-link" href="blank.html" aria-label="Вторая страница каталога">2</a>
+              </li>
+              <li class="pages-button">
+                <a class="catalog-link" href="blank.html" aria-label="Третья страница каталога">3</a>
+              </li>
+              <li>
+                <button class="catalog-link pages-button next-page-button" type="button" aria-label="Перейти на следующую страницу каталога">Следующая</button>
+              </li>
             </ul>
           </div>
         </div>
