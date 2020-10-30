@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page-body">
     <header class="main-header">
@@ -64,7 +64,7 @@
         </nav>
       </div>
     </header>
-    
+
     <main class="top-wrapper">
       <section class="promo-section">
         <h2 class="visually-hidden">Промо-блок</h2>
@@ -123,7 +123,7 @@
             <div class="slider-bullets">
               <button class="slider-bullet" type="button" aria-label="Перейти на прошлый слайд с товарами"></button>
               <button class="slider-bullet slider-bullet-selected" type="button" aria-label="Перейти на следующий слайд с товарами"></button>
-            </div> 
+            </div>
         </div>
       </section>
 
@@ -187,12 +187,12 @@
               </div>
               <div class="product-container">
                 <p class="popular-item-name">Перфоратор BOSCH<br>BFG 2000</p>
+                <span class="last-price">22500 Р.</span>
                 <span class="hot-price">12500 Р.</span>
                 <span class="new-item">New</span>
               </div>
             </li>
           </ul>
-
           <div class="modal-centered modal-purchase-wrapper display-none">
             <div class="modal modal-purchase">
               <button class="modal-close" type="button" aria-label="Закрыть модальное окно">
@@ -336,31 +336,31 @@
               </button>
               <h2 class="visually-hidden">Форма обратной связи</h2>
               <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-                  <div class="feedback-modal">
-                    <div class="contacts-modal-wrapper">
-                      <p class="input-wrapper">
-                        <label class="feedback-label" for="feedback-name">Ваше имя</label>
-                        <input class="feedback-input name-input" id="feedback-name" type="text" name="name" placeholder="Имя Фамилия">
-                      </p>
-                      <p class="input-wrapper">
-                        <label class="feedback-label" for="feedback-email">Ваш e-mail</label>
-                        <input class="feedback-input email-input" id="feedback-email" type="email" name="email" placeholder="email@example.com">
-                      </p>
-                    </div>
+                <div class="feedback-modal">
+                  <div class="contacts-modal-wrapper">
                     <p class="input-wrapper">
-                      <label class="feedback-label" for="feedback-comment">Текст письма</label>
-                      <textarea class="feedback-input feedback-input-field" id="feedback-comment" name="comment" placeholder="В свободной форме"></textarea>
+                      <label class="feedback-label" for="feedback-name">Ваше имя</label>
+                      <input class="feedback-input name-input" id="feedback-name" type="text" name="name" placeholder="Имя Фамилия">
+                    </p>
+                    <p class="input-wrapper">
+                      <label class="feedback-label" for="feedback-email">Ваш e-mail</label>
+                      <input class="feedback-input email-input" id="feedback-email" type="email" name="email" placeholder="email@example.com">
                     </p>
                   </div>
-                  <div class="modal-purchase-buttons">
-                    <div class="feedback-modal">
-                      <button class="basic-button basic-state" type="submit" aria-label="Отправить письмо в компанию">Отправить</button>
-                    </div>
+                  <p class="input-wrapper">
+                    <label class="feedback-label" for="feedback-comment">Текст письма</label>
+                    <textarea class="feedback-input feedback-input-field" id="feedback-comment" name="comment" placeholder="В свободной форме"></textarea>
+                  </p>
+                </div>
+                <div class="modal-purchase-buttons">
+                  <div class="feedback-modal">
+                    <button class="basic-button basic-state" type="submit" aria-label="Отправить письмо в компанию">Отправить</button>
                   </div>
-              </form> 
+                </div>
+              </form>
             </div>
           </div>
-         
+
           <div class="modal-map-wrapper display-none modal-centered">
             <div class="modal-map">
               <button class="modal-close" type="button" aria-label="Закрыть модальное окно">
@@ -369,59 +369,58 @@
                 </svg>
               </button>
               <h2 class="visually-hidden">Как до нас добраться</h2>
-              <iframe class="map-full" src="https://yandex.by/map-widget/v1/-/CCQ~NCgxpC" width="100%" height="449" allowfullscreen="" aria-hidden="false" tabindex="0" title="Офис компани по адресу г. Санк-Петербург, ул. Большая Конюшенная 19/8">
+              <iframe class="map-full" src="https://yandex.by/map-widget/v1/-/CCQ~NCgxpC" width="943" height="449" allowfullscreen="" aria-hidden="false" tabindex="0" title="Офис компани по адресу г. Санк-Петербург, ул. Большая Конюшенная 19/8">
               </iframe>
             </div>
           </div>
-
         </div>
       </div>
     </main>
 
     <footer class="main-footer flex-wrapper">
-        <div class="footer-container">
-          <div class="footer-logo-container">
-            <a class="footer-logo" href="#">
-              <img src="img/main-logo-footer.svg" width="220" height="68" alt="Логотип магазина Техномарт">
-            </a>
-            <p class="footer-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-              <a class="footer-phone" href="tel:+78125550555" aria-label="Позвонить нам по телефону +7 (812) 555-05-55">+7 (812) 555-05-55</a>
-            </p>
-          </div>
-          <div class="footer-nav-container">
-            <ul class="footer-navigation-top">
-              <li>
-                <a class="footer-navigation-link-top" href="#">Компания</a>
-              </li>
-              <li>
-                <a class="footer-navigation-link-top" href="#">Новости</a>
-              </li>
-              <li>
-                <a class="footer-navigation-link-top" href="catalog.html">Каталог</a>
-              </li>
-              <li>
-                <a class="footer-navigation-link-top" href="#">Доставка</a>
-              </li>
-              <li>
-                <a class="footer-navigation-link-top" href="#">Контакты</a>
-              </li>
-            </ul>
-            <ul class="footer-navigation-bottom">
-              <li>
-                <a class="footer-navigation-link-bottom" href="#">Материалы</a>
-              </li>
-              <li>
-                <a class="footer-navigation-link-bottom" href="#">Техника</a>
-              </li>
-              <li>
-                <a class="footer-navigation-link-bottom" href="#">Инструмент</a>
-              </li>
-              <li>
-                <a class="footer-navigation-link-bottom" href="#">Спецпредложения</a>
-              </li>
-            </ul>
+      <div class="footer-container">
+        <div class="footer-logo-container">
+          <a class="footer-logo" href="#">
+            <img src="img/main-logo-footer.svg" width="220" height="68" alt="Логотип магазина Техномарт">
+          </a>
+          <p class="footer-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+            <a class="footer-phone" href="tel:+78125550555" aria-label="Позвонить нам по телефону +7 (812) 555-05-55">+7 (812) 555-05-55</a>
+          </p>
         </div>
+        <div class="footer-nav-container">
+          <ul class="footer-navigation-top">
+            <li>
+              <a class="footer-navigation-link-top" href="#">Компания</a>
+            </li>
+            <li>
+              <a class="footer-navigation-link-top" href="#">Новости</a>
+            </li>
+            <li>
+              <a class="footer-navigation-link-top" href="catalog.html">Каталог</a>
+            </li>
+            <li>
+              <a class="footer-navigation-link-top" href="#">Доставка</a>
+            </li>
+            <li>
+              <a class="footer-navigation-link-top" href="#">Контакты</a>
+            </li>
+          </ul>
+          <ul class="footer-navigation-bottom">
+            <li>
+              <a class="footer-navigation-link-bottom" href="#">Материалы</a>
+            </li>
+            <li>
+              <a class="footer-navigation-link-bottom" href="#">Техника</a>
+            </li>
+            <li>
+              <a class="footer-navigation-link-bottom" href="#">Инструмент</a>
+            </li>
+            <li>
+              <a class="footer-navigation-link-bottom" href="#">Спецпредложения</a>
+            </li>
+          </ul>
         </div>
+      </div>
       <div class="footer-bottom-wrapper flex-wrapper">
         <div class="footer-bottom-bar">
           <h2 class="visually-hidden">Обратная связь</h2>
@@ -440,7 +439,7 @@
                 <span class="visually-hidden">Facebook</span>
                 <svg aria-hidden="true" focusable="false" width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
-                </svg>   
+                </svg>
               </a>
             </li>
             <li>
@@ -455,13 +454,12 @@
           <p class="footer-copyright footer-copyright-email">Обратная связь:
             <a class="copyright-link" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
-          <p class="footer-copyright footer-copyright-developer">Разработано — 
+          <p class="footer-copyright footer-copyright-developer">Разработано —
             <a class="copyright-link" href="htmlacademy.ru">htmlacademy.ru</a>
           </p>
         </div>
       </div>
-      
     </footer>
-    <script src="js/index.js"></script>
+    <script src="js/index.min.js"></script>
   </body>
 </html>
