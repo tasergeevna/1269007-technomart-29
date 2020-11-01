@@ -1634,7 +1634,7 @@ img {
 .service-buttons-list {
     position: relative;
     margin: 0;
-    margin-bottom: 54px;
+    margin-bottom: 50px;
     padding: 49px 0;
     list-style: none;
 }
@@ -1783,6 +1783,7 @@ img {
 .bottom-wrapper {
     display: grid;
     width: 940px;
+    margin-top: 4px;
     margin-bottom: 69px;
     grid-template-columns: 3fr 1fr 2fr;
 }
@@ -1842,6 +1843,10 @@ img {
     width: 25px;
     height: 2px;
     background: var(--basic-red);
+}
+
+.delivery-partner-item:nth-child(3)::before {
+    top: 39%;
 }
 
 .delivery-partner-item a {
@@ -1974,7 +1979,8 @@ img {
 .filters-title {
     box-sizing: border-box;
     margin: 0;
-    padding: 9px 0 16px 18px;
+    margin-bottom: 10px;
+    padding: 9px 0 10px 18px;
     background-color: var(--filter-background);
 }
 
@@ -2005,7 +2011,7 @@ border-bottom: solid 1px var(--gray-active);
 }
 
 .legend-heading {
-    margin: 20px 0 10px 0;
+    margin: 20px 0 8px 0;
     padding: 0;
     padding-top: 3px;
     font-style: normal;
@@ -2247,8 +2253,8 @@ input::-webkit-inner-spin-button {
     display: flex;
     align-items: start;
     margin: 0;
-    margin-bottom: 16px;
-    padding: 9px 0 16px 20px;
+    margin-bottom: 22px;
+    padding: 9px 0 10px 20px;
     background-color: var(--filter-background);
     grid-column: 2/2;
 }
@@ -2402,6 +2408,10 @@ input::-webkit-inner-spin-button {
     grid-column: 1/3;
 }
 
+.all-items .popular-item-name {
+  line-height: 21px;
+}
+
 .popular-item-button {
     box-sizing: border-box;
     min-width: 135px;
@@ -2494,7 +2504,7 @@ input::-webkit-inner-spin-button {
     box-sizing: border-box;
     min-width: 38px;
     margin-right: 10px;
-    padding: 5px 10px;
+    padding: 7px 10px;
     text-align: center;
     border: solid 1px var(--gray-border);
     border-radius: 2px;
@@ -2534,13 +2544,13 @@ input::-webkit-inner-spin-button {
 .info-section-wrapper {
     width: 100%;
     min-width: 940px;
-    padding: 68px 0 70px 0;
+    padding: 67px 0;
     background-color: var(--gray-service-and-footer);
 }
 
 .info-section {
     width: 940px;
-    margin: 0 auto;
+    margin: -2px auto 2px auto;
 }
 
 .info-title {
